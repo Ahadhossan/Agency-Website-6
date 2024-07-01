@@ -1,0 +1,62 @@
+.counter-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-item{
+    width: 33%;
+    text-align: center;
+}
+
+.counter-number, .counter-title{
+    background: var(--counter-color);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.counter-number{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.counter-title{
+    font-size: 1.5rem;
+}
+
+/* ============ responsive ================= */
+@media only screen and (max-width: 992px) {
+    .counter-number{
+      font-size: 2rem;
+    }
+
+    .counter-title{
+      font-size: 1.2rem;
+    }
+
+    .counter-item{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .counter-number{
+      font-size: 1.5rem;
+    }
+
+    .counter-title{
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .counter-wrapper{
+        flex-direction: column;
+    }
+
+    .counter-item{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+}
